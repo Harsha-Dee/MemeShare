@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
 
     <ImageView
@@ -34,8 +35,11 @@
         android:id="@+id/shareButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
         android:padding="25dp"
         android:text="Share"
+        android:textSize="20sp"
+        android:textColor="@color/white"
         android:layout_margin="10dp"
         android:onClick="shareMeme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,6 +54,10 @@
         android:padding="25dp"
         android:text="next"
         android:onClick="generateNext"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background"
+        android:theme="@style/share_button"
         android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/guideline2"
